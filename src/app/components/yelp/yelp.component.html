@@ -1,0 +1,13 @@
+<h1 class="display-3">Business: {{business?.name}}</h1>
+<h3 class="text-primary">Number of Reviews: {{ business?.review_count}}</h3>
+<h3>Overall Rating: {{ business?.rating}}</h3>
+<img class="rounded-circle" src="{{business?.image_url}}" alt="">
+<hr>
+<h2>Yelp Reviews</h2>
+<ul class="list-group" *ngFor="let review of reviews">
+  <li class="list-group-item lead shadow p-3 mb-5 bg-white rounded" *ngIf="review.rating >= 4">
+    <span class="mr-2 font-weight-bold">Rating: {{review.rating}} by {{review.user.name}}</span> 
+    <br><p>{{ review.text }}</p>  
+    <a href="{{review.url}}" class="stretched-link"><small>See full review on Yelp</small></a>
+  </li>
+</ul>

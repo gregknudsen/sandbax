@@ -1,0 +1,21 @@
+<nav class="navbar navbar-expand navbar-dark bg-primary mb-4">
+  <div class="container">
+    <a [routerLink]="['/']" class="navbar-brand">Sandbox</a>
+    <div>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a [routerLink]="['/']" routerLinkActive="router-link-active"  class="nav-link">Home</a>
+        </li>
+        <li class="nav-item">
+          <a [routerLink]="['/users']" routerLinkActive="router-link-active"  class="nav-link">Users</a>
+        </li>
+        <li class="nav-item">
+          <a [routerLink]="['/posts']" routerLinkActive="router-link-active"  class="nav-link">Posts</a>
+        </li>
+        <li class="nav-item">
+          <a [routerLink]="['/business']" routerLinkActive="router-link-active"  class="nav-link">Yelp</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
